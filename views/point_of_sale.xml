@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- vim:fdn=3:
+-->
+<openerp>
+    <data>
+        <record id="view_product_template_search11" model="ir.ui.view">
+        <field name="name">product.template.search1</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+            <search>
+                <filter string="Compañia" context="{'group_by':'company_id'}" />
+            </search>
+        </field>
+    	</record>
+    	
+    	<record id="pos_order_graph" model="ir.ui.view">
+            <field name="name">pos.order.graph</field>
+            <field name="model">pos.order</field>
+            <field name="arch" type="xml">
+                <graph string="Total" type="bar">
+                    <field name="user_id" type="row"/>
+                    <field name="date_order" type="col"/>
+                </graph>
+            </field>
+       </record>
+     
+    </data>
+</openerp>
