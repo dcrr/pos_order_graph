@@ -160,8 +160,3 @@ class pos_order(osv.osv):
             'target': 'current',
             'res_id': inv_ids and inv_ids[0] or False,
         }"""
-        
-        
-        
-        
-        

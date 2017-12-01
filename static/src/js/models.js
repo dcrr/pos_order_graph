@@ -23,7 +23,7 @@ function pos_order_graph_models(instance, module){ //module is instance.point_of
             return base_posmodel_model;
 	    })(),
 
-        push_and_invoice_order: function(order){
+   /*     push_and_invoice_order: function(order){
             var self = this;
             var invoiced = new $.Deferred();
 
@@ -66,6 +66,6 @@ function pos_order_graph_models(instance, module){ //module is instance.point_of
             });
 
             return invoiced;
-        },
+        },*/
     });
 }

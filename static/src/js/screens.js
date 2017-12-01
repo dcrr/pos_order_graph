@@ -5,7 +5,7 @@ function pos_order_graph_screens(instance, module){ //module is instance.point_o
 
     var round_pr = instance.web.round_precision;
 
-    module.ReceiptScreenWidget = module.ReceiptScreenWidget.extend({
+    /*module.ReceiptScreenWidget = module.ReceiptScreenWidget.extend({
         refresh: function() {
             var order = this.pos.get('selectedOrder');
             $('.pos-receipt-container', this.$el).html(QWeb.render('PosInvoice',{
@@ -16,7 +16,7 @@ function pos_order_graph_screens(instance, module){ //module is instance.point_o
                 }));
                 
         },
-    });
+    });*/
 
     module.ClientListScreenWidget.include({
 
